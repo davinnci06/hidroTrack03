@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HidroTrack-03</string>
+    <string name="bienvenidos">¡Bienvenidos a HidroTrack!</string>
+    <string name="consu">Consumos</string>
+    <string name="conse">Consejos</string>
+    <string name="prog">Progreso</string>
+    <string name="info">Información</string>
+    <string name="config">Configuración</string>
+    <string name="fully">Descripción</string>
+
+</resources>

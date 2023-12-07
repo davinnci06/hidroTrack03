@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header" />
@@ -43,7 +42,7 @@
     <TextView
         android:id="@+id/tV61"
         style="@style/style_tittle"
-        android:text="Configuración"
+        android:text="@string/settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iLogo" />
@@ -63,7 +62,7 @@
         android:id="@+id/btn6"
         style="@style/style_button"
         android:layout_marginTop="50sp"
-        android:text="Guardar"
+        android:text="@string/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sp6" />
@@ -72,7 +71,7 @@
         android:id="@+id/btn61"
         style="@style/style_button"
         android:layout_marginTop="30sp"
-        android:text="Regresar"
+        android:text="@string/back"
         app:layout_constraintTop_toBottomOf="@+id/btn6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

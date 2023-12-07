@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header" />
@@ -43,7 +42,7 @@
     <TextView
         android:id="@+id/tV21"
         style="@style/style_tittle"
-        android:text="Consumo de Agua"
+        android:text="@string/consumption"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iLogo" />
@@ -52,7 +51,7 @@
         android:id="@+id/eT21"
         style="@style/style_editText"
         android:layout_marginTop="50sp"
-        android:hint="Escriba su consumo"
+        android:hint="@string/type_consumption"
         android:inputType="number"
         app:layout_constraintTop_toBottomOf="@id/tV21"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +63,7 @@
         android:id="@+id/btn2"
         style="@style/style_button"
         android:layout_marginTop="30sp"
-        android:text="Guardar"
+        android:text="@string/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/eT21" />
@@ -73,7 +72,7 @@
         android:id="@+id/btn21"
         style="@style/style_button"
         android:layout_marginTop="30sp"
-        android:text="Regresar"
+        android:text="@string/back"
         app:layout_constraintTop_toBottomOf="@+id/btn2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header" />
@@ -43,7 +42,7 @@
     <TextView
         android:id="@+id/tV31"
         style="@style/style_tittle"
-        android:text="Consejos para reducir el consumo de Agua"
+        android:text="@string/tips"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iLogo" />
@@ -60,14 +59,14 @@
         <TextView
             android:id="@+id/textView2"
             style="@style/style_text"
-            android:text="Cierra la llave del agua mientras te cepillas los dientes; de esta manera, una familia de cinco personas puede ahorrar hasta 40 litros de agua al día." />
+            android:text="@string/tips3" />
     </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/btn31"
         style="@style/style_button"
         android:layout_marginTop="30sp"
-        android:text="Regresar"
+        android:text="@string/back"
         app:layout_constraintTop_toBottomOf="@id/cV3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

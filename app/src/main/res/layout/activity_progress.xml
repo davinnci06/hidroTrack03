@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header" />
@@ -43,7 +42,7 @@
     <TextView
         android:id="@+id/tV41"
         style="@style/style_tittle"
-        android:text="Seguimiento y Progreso"
+        android:text="@string/progress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iLogo" />
@@ -70,7 +69,7 @@
         android:id="@+id/btn41"
         style="@style/style_button"
         android:layout_marginTop="30sp"
-        android:text="Regresar"
+        android:text="@string/back"
         app:layout_constraintTop_toBottomOf="@id/cV4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -4,6 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FEFEFE"
     tools:context=".ActivityInfo">
+
+    <ImageView
+        android:id="@+id/iHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/iFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/footer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/iLogo"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="50sp"
+        app:layout_constraintBottom_toTopOf="@id/tV51"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hidrologo" />
+
+    <TextView
+        android:id="@+id/tV51"
+        style="@style/style_tittle"
+        android:text="Información sobre la Conservación del Agua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iLogo" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cV5"
+        style="@style/style_cardView"
+        android:layout_height="300sp"
+        app:layout_constraintTop_toBottomOf="@id/tV51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn51">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tip1"
+                    style="@style/style_text"
+                    android:text="1. Instala un aireador WaterSense en el grifo de la cocina para reducir el flujo a menos de 1 galón por minuto, una solución económica." />
+
+                <TextView
+                    android:id="@+id/tip2"
+                    style="@style/style_text"
+                    android:text="2. Ajusta el nivel del agua de la piscina para disminuir las salpicaduras y utiliza una cubierta para prevenir la evaporación cuando no esté en uso." />
+
+                <TextView
+                    android:id="@+id/tip3"
+                    style="@style/style_text"
+                    android:text="3. Opta por duchas en lugar de baños para un uso más eficiente del agua." />
+
+                <TextView
+                    android:id="@+id/tip4"
+                    style="@style/style_text"
+                    android:text="4. Apaga el grifo mientras no lo uses al lavar platos o cepillarte los dientes." />
+
+                <TextView
+                    android:id="@+id/tip5"
+                    style="@style/style_text"
+                    android:text="5. Llena el lavabo al lavar frutas, verduras o platos en lugar de dejar correr el agua." />
+
+                <TextView
+                    android:id="@+id/tip6"
+                    style="@style/style_text"
+                    android:text="6. Asegúrate de que tu lavavajillas esté lleno antes de hacer funcionar una carga para maximizar la eficiencia." />
+
+                <TextView
+                    android:id="@+id/tip7"
+                    style="@style/style_text"
+                    android:text="7. Utiliza productos WaterSense etiquetados para garantizar eficiencia en el uso del agua y la energía." />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn51"
+        style="@style/style_button"
+        android:layout_marginTop="30sp"
+        android:text="Regresar"
+        app:layout_constraintTop_toBottomOf="@id/cV5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
